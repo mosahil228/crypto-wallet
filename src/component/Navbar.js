@@ -38,7 +38,7 @@ const Navbar = () => {
       setTimeout(() => {
         setHide("rightH")
       }, 1500);
-      
+      setTotal(0)
       toast.success('Transaction completed', {
         position: "top-center",
         autoClose: 3000,
@@ -108,7 +108,7 @@ const Navbar = () => {
     })
     let remainingTotal = +item.orderPrice;
     setCart(updatedItem)
-    setTotal((prev) => prev - remainingTotal)
+    setTotal((prev) => prev -remainingTotal)
   }
 
   return (
