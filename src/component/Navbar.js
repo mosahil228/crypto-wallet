@@ -85,6 +85,7 @@ const Navbar = () => {
         setTimeout(() => {
           setHide("rightH")
         }, 1500);
+        setTotal(0)
         
         toast.success('Transaction completed', {
           position: "top-center",
