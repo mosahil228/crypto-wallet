@@ -13,7 +13,7 @@ const Home = () => {
     const [refresh, setRefresh] = useState(0);
     const [loading, setLoading] = useState(true)
     const [orderValue, setOrderValue] = useState("")
-    const { cart,setCart,total,setTotal} = useContext(AccountContext);
+    const { setCart,setTotal} = useContext(AccountContext);
     
 
     const url = "https://data.messari.io/api/v1/assets?fields=id,slug,symbol,metrics/market_data/price_usd";
