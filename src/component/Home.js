@@ -40,6 +40,7 @@ const Home = () => {
             setCart((prev)=>[...prev,item])
             setTotal((prev)=>prev+orderTotal)
             setRefresh(refresh+1)
+            setOrderValue("")
             console.log(item);
         }else{
             toast.warn('Please add some amout before adding to cart!', {
